@@ -17,7 +17,7 @@
 <body>
 <header class="header border-bottom">
     <div class="header__inner py-3">
-        <div class="container mx-auto row">
+        <div class="container mx-auto row align-items-center">
             <div class="logo col-1">
                 <img src="./assets/logo.svg" alt="Logo">
             </div>
@@ -88,10 +88,10 @@
         </div>
     </section>
     <section class="latest-collections position-relative">
-        <div class="container mx-auto row">
-            <div class="col-6 me-5">
-                <div class="row align-items-start mb-3">
-                    <div class="nft-card col-5">
+        <div class="container mx-auto row flex-xl-row flex-row-reverse">
+            <div class="col-xl-6 col-12 me-xl-5 mb-5 mb-xl-0">
+                <div class="row align-items-start justify-content-center justify-content-xl-start flex-sm-row flex-column m-0 mb-5 w-100">
+                    <div class="nft-card col-sm-5 col-12 mx-auto mx-sm-0 me-sm-5">
                         <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
                             <img class="nft-card__image mb-2" src="./assets/ancient.png" alt="Ancient Ones">
                             <div>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nft-card offset-2 col-5 mt-5">
+                    <div class="nft-card offset-2 col-sm-5 col-12 mt-5 mx-auto mx-sm-0">
                         <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
                             <img class="nft-card__image mb-2" src="./assets/lost.png" alt="Lost In Space">
                             <div>
@@ -110,8 +110,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-start ms-4">
-                    <div class="nft-card col-5">
+                <div class="row align-items-start justify-content-center justify-content-xl-start flex-sm-row flex-column ms-sm-4 ms-0 w-100">
+                    <div class="nft-card col-sm-5 col-12 mx-auto mx-sm-0 me-sm-5">
                         <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
                             <img class="nft-card__image mb-2" src="./assets/godofwar.png" alt="God Of War">
                             <div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nft-card offset-2 col-5 mt-5">
+                    <div class="nft-card offset-2 col-sm-5 col-12 mt-5 mx-auto mx-sm-0">
                         <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
                             <img class="nft-card__image mb-2" src="./assets/watchers.png" alt="The Watchers">
                             <div>
@@ -131,13 +131,14 @@
                     </div>
                 </div>
             </div>
-            <div class="latest-collections__text col-5 align-self-center">
-                <div class="heading d-flex">
+            <div class="latest-collections__text col-xl-5 col-12 align-self-center">
+                <div class="heading d-flex w-100">
                     <h2>Latest NFT Collections</h2>
                     <div class="heading__circle"></div>
                 </div>
                 <div class="ms-3">
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac, luctus ut sem. Mauris pretium lacus eget vulputate rhoncus.</p>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor
+                        nec accumsan ac, luctus ut sem. Mauris pretium lacus eget vulputate rhoncus.</p>
                     <div class="btn-wrapper">
                         <button class="btn btn-primary">View All Collections</button>
                     </div>
@@ -145,6 +146,49 @@
             </div>
         </div>
         <div class="latest-collections__gradient"></div>
+    </section>
+    <section class="about d-flex">
+        <div class="about__inner w-100 h-100">
+            <div class="row container mx-auto">
+                <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+                    <div class="heading d-flex w-100">
+                        <h2>Why Choose Us?</h2>
+                        <div class="heading__circle"></div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan
+                        ac, luctus ut sem. Mauris pretium lacus eget vulputate rhoncus. Vivamus egestas, orci eu
+                        lobortis pulvinar.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan
+                        ac, luctus ut sem.
+                    </p>
+                </div>
+                <div class="offset-lg-2 offset-0 col-12 col-lg-5">
+                    <div class="row mb-4 feature-row flex-column flex-sm-row">
+                        <div class="feature col-sm-5 col-12 p-4 me-4 mb-4 mb-sm-0 d-flex justify-content-center align-items-center flex-column">
+                            <img class="mb-3" src="./assets/marketplace.svg" alt="Marketplace">
+                            <p>Marketplace</p>
+                        </div>
+                        <div class="feature col-sm-5 col-12 p-4 d-flex justify-content-center align-items-center flex-column">
+                            <img class="mb-3" src="./assets/protection.svg" alt="Money Protection">
+                            <p>Money Protection</p>
+                        </div>
+                    </div>
+                    <div class="row feature-row flex-column flex-sm-row">
+                        <div class="feature col-sm-5 col-12 p-4 me-4 mb-4 mb-sm-0 d-flex justify-content-center align-items-center flex-column">
+                            <img class="mb-3" src="./assets/data-protection.svg" alt="Data Protection">
+                            <p>Data Protection</p>
+                        </div>
+                        <div class="feature col-sm-5 col-12 p-4 d-flex justify-content-center align-items-center flex-column">
+                            <img class="mb-3" src="./assets/secure.svg" alt="Fast & Secure">
+                            <p>Fast & Secure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 </body>
