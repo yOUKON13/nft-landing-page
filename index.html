@@ -8,7 +8,7 @@
     <title>NFT Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Poppins:wght@500;700&family=Jura:wght@500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;700&family=Jura:wght@500&display=swap"
           rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -16,10 +16,10 @@
 </head>
 <body>
 <header class="header border-bottom">
-    <div class="header__inner px-md-5 py-3">
+    <div class="header__inner py-3">
         <div class="container mx-auto row">
             <div class="logo col-1">
-                <img src="./assets/logo.svg" alt="">
+                <img src="./assets/logo.svg" alt="Logo">
             </div>
             <nav class="nav logo col-8 col-xxl-5 offset-0 offset-xxl-3 d-lg-flex d-none align-items-center justify-content-start justify-content-xxl-center">
                 <div class="me-5">
@@ -53,16 +53,18 @@
             <div class="col-12 col-xl-8 col-xxl-6 homescreen__text">
                 <h1 class="text-md-start text-center">Keep Calm &<br> Collect Your NFTs.</h1>
                 <p class="text-md-start text-center mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac, luctus ut sem. Mauris pretium lacus eget vulputate rhoncus. Vivamus egestas, orci eu lobortis pulvinar.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac,
+                    luctus ut sem. Mauris pretium lacus eget vulputate rhoncus. Vivamus egestas, orci eu lobortis
+                    pulvinar.
                 </p>
                 <div class="row">
-                <div class="demo d-flex col-12 col-md-6 align-items-center justify-content-center">
-                    <img class="me-2" src="./assets/play.svg" alt="">
-                    <div>
-                        <p class="demo__heading fs-5 mb-4">Let’s get started!</p>
-                        <p>Watch this quick  demo video to see how to get started.</p>
+                    <div class="demo d-flex col-12 col-md-6 align-items-center justify-content-center">
+                        <img class="me-2" src="./assets/play.svg" alt="Play">
+                        <div>
+                            <p class="demo__heading fs-5 mb-4">Let’s get started!</p>
+                            <p>Watch this quick demo video to see how to get started.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
 
             </div>
@@ -76,7 +78,7 @@
                 <div class="heading__circle"></div>
             </div>
             <div class="col-12 mb-3">
-                <img class="w-100" src="./assets/map.png" alt="">
+                <img class="w-100" src="./assets/map.png" alt="Map">
             </div>
             <div class="mx-auto col-xxl-2 col-xl-3 col-sm-4 col-12">
                 <div class="btn-wrapper flex-fill">
@@ -84,6 +86,65 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="latest-collections position-relative">
+        <div class="container mx-auto row">
+            <div class="col-6 me-5">
+                <div class="row align-items-start mb-3">
+                    <div class="nft-card col-5">
+                        <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
+                            <img class="nft-card__image mb-2" src="./assets/ancient.png" alt="Ancient Ones">
+                            <div>
+                                <p class="mb-1">Ancient Ones</p>
+                                <p><img src="./assets/etherium.svg" class="me-2" alt="ETH">5.0 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card offset-2 col-5 mt-5">
+                        <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
+                            <img class="nft-card__image mb-2" src="./assets/lost.png" alt="Lost In Space">
+                            <div>
+                                <p class="mb-1">Lost In Space</p>
+                                <p><img src="./assets/etherium.svg" class="me-2" alt="ETH">3.0 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-start ms-4">
+                    <div class="nft-card col-5">
+                        <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
+                            <img class="nft-card__image mb-2" src="./assets/godofwar.png" alt="God Of War">
+                            <div>
+                                <p class="mb-1">God Of War</p>
+                                <p><img src="./assets/etherium.svg" class="me-2" alt="ETH">7.0 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card offset-2 col-5 mt-5">
+                        <div class="nft-card__inner px-4 py-3 d-flex align-items-end">
+                            <img class="nft-card__image mb-2" src="./assets/watchers.png" alt="The Watchers">
+                            <div>
+                                <p class="mb-1">The Watchers</p>
+                                <p><img src="./assets/etherium.svg" class="me-2" alt="ETH">3.2 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-collections__text col-5 align-self-center">
+                <div class="heading d-flex">
+                    <h2>Latest NFT Collections</h2>
+                    <div class="heading__circle"></div>
+                </div>
+                <div class="ms-3">
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac, luctus ut sem. Mauris pretium lacus eget vulputate rhoncus.</p>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary">View All Collections</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-collections__gradient"></div>
     </section>
 </main>
 </body>
