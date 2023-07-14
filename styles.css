@@ -11,7 +11,7 @@ html, body {
 }
 
 section {
-    margin-bottom: 8em;
+    margin-bottom: 10em;
 }
 
 .btn {
@@ -103,6 +103,20 @@ p {
     padding: 0;
 }
 
+.form-control {
+    border: none;
+    text-align: center;
+    padding: 1em 0.5em;
+}
+
+.form-control, .form-control::placeholder {
+    color: #fff;
+}
+
+.form-control, .form-control:focus {
+    background: #0d0819;
+}
+
 .homescreen {
     padding: 10rem 0 7rem 0;
     position: relative;
@@ -163,6 +177,7 @@ p {
 
 .heading h2 {
     z-index: 2;
+    text-align: center;
 }
 
 .heading__circle {
@@ -254,8 +269,24 @@ p {
     color: #BDF3FF;
 }
 
-@media screen and (max-width: 992px){
-    .about{
+.abilities {
+    padding-bottom: 10em;
+    position: relative;
+}
+
+.abilities::after {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    height: 100%;
+    top: 0;
+    left: -50vw;
+    border-bottom: 1px solid #9B55FC;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .about {
         width: 100vw;
         padding: 0.15em 0;
     }
@@ -270,7 +301,15 @@ p {
         left: 0;
     }
 
-    .homescreen::after{
+    .homescreen::after {
+        border-radius: 0;
+    }
+
+    .abilities{
+        padding-bottom: 3em;
+    }
+
+    .abilities::after{
         border-radius: 0;
     }
 }
