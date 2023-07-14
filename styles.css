@@ -189,6 +189,9 @@ p {
     width: 5em;
     height: 5em;
     background: linear-gradient(180deg, #6147F8 0%, #BC5EFF 100%);
+    -webkit-box-shadow: 0px 19px 29px 0px rgba(8, 1, 63, 0.2);
+    -moz-box-shadow: 0px 19px 29px 0px rgba(8, 1, 63, 0.2);
+    box-shadow: 0px 19px 29px 0px rgba(8, 1, 63, 0.2);
 }
 
 .nft-card {
@@ -263,6 +266,38 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: #110c1c;
     backdrop-filter: blur(10rem);
+    position: relative;
+}
+
+.feature__blur {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    filter: blur(3em);
+}
+
+.feature-row:nth-child(1) .feature:nth-child(1) .feature__blur {
+    background: #FFB413;
+    top: -1em;
+    left: 2em;
+}
+
+.feature-row:nth-child(1) .feature:nth-child(2) .feature__blur {
+    background: #FF5A13;
+    bottom: 1em;
+    left: 4em;
+}
+
+.feature-row:nth-child(2) .feature:nth-child(1) .feature__blur {
+    background: #2FB8EB;
+    top: -1em;
+    left: 3em;
+}
+
+.feature-row:nth-child(2) .feature:nth-child(2) .feature__blur {
+    background: #00E3A5;
+    bottom: 1em;
+    left: 7em;
 }
 
 .feature p {
