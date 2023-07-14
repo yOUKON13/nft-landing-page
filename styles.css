@@ -109,7 +109,7 @@ p {
     padding: 1em 0.5em;
 }
 
-.form-control, .form-control::placeholder {
+.form-control, .form-control:focus, .form-control::placeholder {
     color: #fff;
 }
 
@@ -285,6 +285,23 @@ p {
     border-radius: 100%;
 }
 
+.footer {
+    background: #0d0819;
+}
+
+.footer__nav a, .footer__copyright a {
+    text-transform: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer__description {
+    margin-bottom: 5em;
+}
+
+.footer__copyright * {
+    color: #545C71;
+}
+
 @media screen and (max-width: 992px) {
     .about {
         width: 100vw;
@@ -305,11 +322,11 @@ p {
         border-radius: 0;
     }
 
-    .abilities{
+    .abilities {
         padding-bottom: 3em;
     }
 
-    .abilities::after{
+    .abilities::after {
         border-radius: 0;
     }
 }
